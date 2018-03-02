@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Work Place Programe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/chatbot.css" />
+    
+</head>
+<body>
+    <header class="row">
+        <p class="col-12 "><h3>Online Job Finder Programme</h3></p>
+        <!-- <p class="col-5">Double Click On black part to submit your answer</p> -->
+        
+    </header>
+
+    <section class="row">
+        
+
+        <p class="col-12 ">Hi There, I Am Here To Help You Find The Best Job That Suits Your Needs and Interests</p>
+        <p>Please fill your answers correctly to Search And Secure A Good Job For Your Needs</p>
+    </section>
+
+
+    <div id="first" ondblclick="next2()">
+        <p>HELLO, WHAT IS YOUR NAME?</p>
+        <input type="text" id="name" >
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="second" ondblclick="agevalidation()">
+        <p id="newname"></p>
+        <input type="text" id="age" >
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="third" ondblclick="next4()">
+        <p id="ageresponse"></p>
+        <input type="text" id="name">
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="fourth">
+        <p>GENDER </p>
+        <select onchange="next5()" id="gender">
+            <option>GENDER</option>
+            <option>MALE</option>
+            <option>FEMALE</option>
+        </select>
+        <br>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="fifth" ondblclick="next6()">
+        <p>WHAT IS YOUR CUMULATIVE GRADE POINT (CGPA) ?</p>
+        <input type="text" id="cgpa">
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="sixth" >
+        <p>WHAT IS THE NAME OF YOUR UNIVERSITY?</p>
+        <select onchange="next7()" id="uni">
+            <option >UNIVERSITY</option>
+            <option >UNIVERSITY OF LAGOS</option>
+            <option >UNIVERSITY OF ILORIN</option>
+            <option >UNIVERSITY OF ABUJA</option>
+            <option >OBAFEMI AWOLOWO UNIVERSITY</option>
+            <option >UNIVERSITY OF IBADAN</option>
+            <option >UNIVERSITY OF NIGERIA, NSSUKA</option>
+            <option >OTHERS</option>
+        </select>
+        <br>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="seventh">
+        <p>WHAT IS THE NAME OF YOUR FACULTY? </p>
+        <select onchange="next8()" id="faculty">
+            <option>FACULTY</option>
+            <option>SCIENCE</option>
+            <option>ROBOTICS</option>
+            <option>ENGINEERING</option>
+            <option>ELECTRONICS</option>
+            <option >ARTIFICIAL INTELLIGENCE</option>
+        </select>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="eighth">
+        <p>WHAT IS THE NAME OF YOUR DEPARTMENT? </p>
+        <select onchange="next9()" id="dept">
+            <option >DEPARTMENT</option>
+            <option >COMPUTER SCIENCES</option>
+            <option>COMPUTER ENGINEERING</option>
+            <option>ELECTRICAL ENGINEERING</option>
+            <option>SYSTEMS ENGINEERING</option>
+            <option>PHYSICS</option>
+            <option>MATHEMATICS</option>
+            <option >OTHERS</option>
+        </select>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="nineth" ondblclick="next10()">
+        <p>WHAT IS YOUR EMAIL ADDRESS? </p>
+        <input type="email" id="mail">
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="tenth">
+        <p id="peaceout"></p>
+        <button onclick="success()">SUBMIT RESPONSE</button>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="error">
+        <p id="errorp" ></p>
+        <button><a href="index.html">RETRY</a></button>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <div id="success">
+        <p id="successp">Congratulations You Have Successufully Applied For This Role We Will Get Back To You Shortly</p>
+        <p><button type="submit">Submit</button></p>
+    </div>
+
+    <script src="chatbot.js"></script>
+
+    
+</body>
+
+</html>
+
+
+
+
+<!-- Do not display this at the moment
+Rone-Orugboh Ajoritsedere
+150805515
+400 Level Computer Science UNILAG
+CSC 405
+-->
